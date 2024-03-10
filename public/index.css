@@ -11,6 +11,10 @@ body {
 	color: #c6c6c6;
 }
 
+h1 {
+	margin-bottom: 0;
+}
+
 .container {
 	text-align: center;
 }
@@ -20,15 +24,13 @@ body {
 	max-width: 200px;
 }
 
-ul {
-	list-style: none;
-	padding: 0;
+.socials {
+	display: flex;
+	flex-direction: row;
+	gap: 5px;
 }
 
-a {
-	color: #ffa8b7;
-}
-
-a:hover {
-	color: #ff4c6c;
+.socials img {
+	width: 32px;
+	height: 32px;
 }
