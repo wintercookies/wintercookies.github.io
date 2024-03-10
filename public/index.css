@@ -1,0 +1,34 @@
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	margin: 0;
+
+	font-family: sans-serif;
+	background-color: #1c1c1c;
+	color: #c6c6c6;
+}
+
+.container {
+	text-align: center;
+}
+
+.avi {
+	border-radius: 500px;
+	max-width: 200px;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+a {
+	color: #ffa8b7;
+}
+
+a:hover {
+	color: #ff4c6c;
+}
