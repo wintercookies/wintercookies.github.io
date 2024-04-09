@@ -1,8 +1,4 @@
 body {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	min-height: 100vh;
 	margin: 0;
 
@@ -15,10 +11,6 @@ h1 {
 	margin-bottom: 0;
 }
 
-.container {
-	text-align: center;
-}
-
 .avi {
 	border-radius: 500px;
 	max-width: 200px;
@@ -27,10 +19,53 @@ h1 {
 .socials {
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
 	gap: 5px;
 }
 
 .socials img {
 	width: 32px;
 	height: 32px;
+}
+
+.content {
+	position: relative;
+}
+
+.background {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	text-align: center;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.background::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-image: url('profile.jpg');
+	background-position: center;
+	background-size: cover;
+	filter: blur(50px);
+	z-index: -1;
+}
+
+.background::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.8);
+	z-index: -1;
 }
